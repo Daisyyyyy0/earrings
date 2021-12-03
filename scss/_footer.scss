@@ -1,0 +1,34 @@
+footer{
+
+    .footer-wrap{
+        margin-top: 5rem;
+        font-size: 0.9rem;
+        .container{
+            display: flex;
+        }
+
+        .footer-menu-item {
+            color: #aaa;
+            &:first-child {
+                color: #555;
+                margin-bottom: .5rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .bg-light{
+        .container{
+            display: flex;
+            justify-content: space-between;
+
+            .social-medias{
+                display: flex;
+
+                i{
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+    
+}

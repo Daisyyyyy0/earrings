@@ -1,0 +1,56 @@
+main{
+
+    .service{
+            @extend %alignCenter;
+
+        .title{
+            margin-top: 3rem;
+            .h1{
+                text-align: center;
+            }
+            p {
+                position: relative;
+                padding: 1.5rem;
+                text-align: center;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 3.125rem;
+                    height: .25rem;
+                    border-radius: .25rem;
+                    background-color: purple;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .item{
+            @extend %alignCenter;
+            .circle-wrap{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                padding: 1rem;
+                background-color: #e0e7ff;
+                
+                svg{
+                    width: 100%;
+                    color: #6366f1;
+                }
+            }
+            .text-title{
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+            .learn-more{
+                display: flex;
+                justify-content: center;
+                i{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+main .service, main .service .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+footer .footer-wrap {
+  margin-top: 5rem;
+  font-size: 0.9rem;
+}
+
+footer .footer-wrap .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-wrap .footer-menu-item {
+  color: #aaa;
+}
+
+footer .footer-wrap .footer-menu-item:first-child {
+  color: #555;
+  margin-bottom: .5rem;
+  letter-spacing: 1px;
+}
+
+footer .bg-light .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .bg-light .container .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .bg-light .container .social-medias i {
+  margin-right: .5rem;
+}
+
+main .service .title {
+  margin-top: 3rem;
+}
+
+main .service .title .h1 {
+  text-align: center;
+}
+
+main .service .title p {
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main .service .title p::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3.125rem;
+  height: .25rem;
+  border-radius: .25rem;
+  background-color: purple;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .service .item .circle-wrap {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #e0e7ff;
+}
+
+main .service .item .circle-wrap svg {
+  width: 100%;
+  color: #6366f1;
+}
+
+main .service .item .text-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+main .service .item .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .service .item .learn-more i {
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=all.css.map */
