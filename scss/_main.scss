@@ -1,10 +1,12 @@
 main{
+    background-color: $background;
 
     .service{
+            margin-top: 4rem;
+        .container{
             @extend %alignCenter;
-
+        }
         .title{
-            margin-top: 3rem;
             .h1{
                 text-align: center;
             }
@@ -33,11 +35,11 @@ main{
                 height: 5rem;
                 border-radius: 50%;
                 padding: 1rem;
-                background-color: #e0e7ff;
+                background-color: $themeColor;
                 
                 svg{
                     width: 100%;
-                    color: #6366f1;
+                    color: #fff;
                 }
             }
             .text-title{
@@ -50,6 +52,46 @@ main{
                 i{
                     font-size: 1.25rem;
                 }
+            }
+        }
+        .btn{
+            background-color: $themeColor;
+            border-color: $themeColor;
+            padding: 0.5rem 2rem;
+            // border-radius: .5rem;
+        }
+    }
+
+    .pictureWall{
+        margin-top: 4rem;
+    }
+
+    #new-arrival{
+        margin-top: 4rem;
+        .row{
+            &:last-of-type{
+                margin-top: 1.5rem;
+            }
+        }
+        .item{
+            background-color: #fff;
+            padding: 1rem;
+            img{
+                margin: auto;
+            }
+            .subtitle{
+                font-size: 0.9rem;
+                letter-spacing: 2px;
+                font-weight: 200;
+                color: $borderColor;
+            }
+            .h4{
+                color: $textColor;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+            p{
+                color: #333;
             }
         }
     }

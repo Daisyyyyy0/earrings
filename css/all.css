@@ -1,4 +1,4 @@
-main .service, main .service .item {
+main .service .container, main .service .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,8 +67,12 @@ footer .bg-light .container .social-medias i {
   margin-right: .5rem;
 }
 
-main .service .title {
-  margin-top: 3rem;
+main {
+  background-color: #f9f5f2;
+}
+
+main .service {
+  margin-top: 4rem;
 }
 
 main .service .title .h1 {
@@ -100,12 +104,12 @@ main .service .item .circle-wrap {
   height: 5rem;
   border-radius: 50%;
   padding: 1rem;
-  background-color: #e0e7ff;
+  background-color: #aec6a1;
 }
 
 main .service .item .circle-wrap svg {
   width: 100%;
-  color: #6366f1;
+  color: #fff;
 }
 
 main .service .item .text-title {
@@ -124,5 +128,49 @@ main .service .item .learn-more {
 
 main .service .item .learn-more i {
   font-size: 1.25rem;
+}
+
+main .service .btn {
+  background-color: #aec6a1;
+  border-color: #aec6a1;
+  padding: 0.5rem 2rem;
+}
+
+main .pictureWall {
+  margin-top: 4rem;
+}
+
+main #new-arrival {
+  margin-top: 4rem;
+}
+
+main #new-arrival .row:last-of-type {
+  margin-top: 1.5rem;
+}
+
+main #new-arrival .item {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+main #new-arrival .item img {
+  margin: auto;
+}
+
+main #new-arrival .item .subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: #93b381;
+}
+
+main #new-arrival .item .h4 {
+  color: #c0945c;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+main #new-arrival .item p {
+  color: #333;
 }
 /*# sourceMappingURL=all.css.map */
