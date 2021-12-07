@@ -1,5 +1,8 @@
 footer{
 
+    .footer-logo{
+        @extend %beCenter;
+    }
     .footer-wrap{
         margin-top: 5rem;
         font-size: 0.9rem;
@@ -18,6 +21,7 @@ footer{
     }
     .bg-light{
         .container{
+            color: #555;
             display: flex;
             justify-content: space-between;
 

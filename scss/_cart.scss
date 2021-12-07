@@ -1,0 +1,59 @@
+main{
+    background-color: $secondBackground;
+    padding-bottom: 4rem;
+}
+.cart-title{
+        color: $textColor;
+}
+.cart-head{
+    background-color: $secondBackground;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+    & > .container{
+        @extend %alignCenter;
+    }
+
+    .step-wrap{
+        flex-direction: row;
+        width: 100%;
+
+        .w-25{
+            // outline: #333 solid 1px;
+            position: relative;
+            @extend %alignCenter;
+
+            .progress-step{
+                background-color: #c5deec;
+                width: 3rem;
+                height: 3rem;
+                @extend %beCenter;
+                margin-bottom: 0.5rem;
+            }
+            .progress-text{
+                
+            }
+            .progress{
+                position: absolute;
+                width: 70%;
+                height: 0.625rem;
+                right: 0;
+                top: 27.5%;
+                transform: translate(50%);
+                background-color: #E5E7EB;
+
+                .progress-bar{
+                    background-color: #86b8d4;
+                }
+            }
+        }
+    }
+
+    
+}
+.cart-body{
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow:1rem .5rem .8rem  rgba(155, 170, 146,0.3);
+    
+}

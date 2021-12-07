@@ -1,4 +1,4 @@
-main .service .container, main .service .item {
+main .service .container, main .service .item, .cart-head > .container, .cart-head .step-wrap .w-25 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +9,22 @@ main .service .container, main .service .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .footer-logo, .cart-head .step-wrap .w-25 .progress-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
@@ -49,6 +65,7 @@ footer .footer-wrap .footer-menu-item:first-child {
 }
 
 footer .bg-light .container {
+  color: #555;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,6 +157,15 @@ main .pictureWall {
   margin-top: 4rem;
 }
 
+main .pictureWall .wall .row .row > * {
+  padding: 5px;
+}
+
+main .pictureWall .wall img {
+  width: 100%;
+  height: 100%;
+}
+
 main #new-arrival {
   margin-top: 4rem;
 }
@@ -150,11 +176,15 @@ main #new-arrival .row:last-of-type {
 
 main #new-arrival .item {
   background-color: #fff;
-  padding: 1rem;
+  border-radius: .5rem;
+  padding: 2rem;
 }
 
 main #new-arrival .item img {
+  display: block;
   margin: auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
 }
 
 main #new-arrival .item .subtitle {
@@ -168,9 +198,67 @@ main #new-arrival .item .h4 {
   color: #c0945c;
   font-weight: 300;
   letter-spacing: 1px;
+  margin-bottom: 1.5rem;
 }
 
 main #new-arrival .item p {
   color: #333;
+}
+
+main {
+  background-color: #eef3eb;
+  padding-bottom: 4rem;
+}
+
+.cart-title {
+  color: #c0945c;
+}
+
+.cart-head {
+  background-color: #eef3eb;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cart-head .step-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.cart-head .step-wrap .w-25 {
+  position: relative;
+}
+
+.cart-head .step-wrap .w-25 .progress-step {
+  background-color: #c5deec;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-head .step-wrap .w-25 .progress {
+  position: absolute;
+  width: 70%;
+  height: 0.625rem;
+  right: 0;
+  top: 27.5%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  background-color: #E5E7EB;
+}
+
+.cart-head .step-wrap .w-25 .progress .progress-bar {
+  background-color: #86b8d4;
+}
+
+.cart-body {
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 1rem 0.5rem 0.8rem rgba(155, 170, 146, 0.3);
+          box-shadow: 1rem 0.5rem 0.8rem rgba(155, 170, 146, 0.3);
 }
 /*# sourceMappingURL=all.css.map */
