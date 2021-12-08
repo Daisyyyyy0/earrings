@@ -50,10 +50,27 @@ main{
 
     
 }
-.cart-body{
+.cart-body {
     background-color: #fff;
     border-radius: .5rem;
     padding: 1rem;
-    box-shadow:1rem .5rem .8rem  rgba(155, 170, 146,0.3);
-    
+    box-shadow: 1rem .5rem .8rem rgba(155, 170, 146, 0.3);
+
+    .cart-list {
+        .cart-item {
+            .cart-info {
+                display: flex;
+
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                }
+
+                .detail {
+                    @extend %alignCenter;
+                }
+            }
+        }
+    }
+
 }
