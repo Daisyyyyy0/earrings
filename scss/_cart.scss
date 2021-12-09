@@ -4,6 +4,8 @@ main{
 }
 .cart-title{
         color: $textColor;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
 }
 .cart-head{
     background-color: $secondBackground;
@@ -55,22 +57,95 @@ main{
     border-radius: .5rem;
     padding: 1rem;
     box-shadow: 1rem .5rem .8rem rgba(155, 170, 146, 0.3);
-
+    .title{
+        font-weight: 300;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
     .cart-list {
-        .cart-item {
-            .cart-info {
-                display: flex;
+        padding: .5rem 1rem;
+        hr{
+            background-color: $borderColor;
+        }
+    }
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
 
-                img {
-                    width: 4rem;
-                    height: 4rem;
-                }
+    .item-info {
+        display: flex;
+        justify-content: center;
 
-                .detail {
-                    @extend %alignCenter;
-                }
+        img {
+            width: 4.25rem;
+            height: 4.25rem;
+            margin-right: 0.8rem;
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .product-color {
+                font-size: 0.8rem;
+                color: #aaa;
             }
         }
     }
 
+    .item-total {
+        @extend %alignCenter;
+        gap: 1rem;
+
+        .item-count {
+            &>* {
+                margin-right: 0.25rem;
+            }
+
+            // &:last-child{
+            //     margin-right: 0;
+            // }
+
+            .itemBtn {
+                width: 1.625rem;
+                height: 1.625rem;
+            }
+
+            .itemInput {
+                width: 3rem;
+                padding: 2px .25rem;
+            }
+        }
+
+    }
+}
+.cartTotal-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // width: 25%;
+    &>span{
+        display: inline-block;
+    }
+    .qty,
+    .subtotal,
+    .delivery-fee,
+    .totalWrap {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        span {
+            &:first-child {
+                color: #aaa;
+            }
+        }
+       
+
+    }
+
+
+   
 }
