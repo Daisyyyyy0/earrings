@@ -149,3 +149,16 @@ main{
 
    
 }
+
+.cart-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .back{
+
+    }
+    .next{
+        background-color: $themeColor;
+        padding: .5rem 1rem;
+    }
+}

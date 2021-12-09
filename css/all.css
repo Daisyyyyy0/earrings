@@ -43,6 +43,10 @@ a {
   color: currentColor;
 }
 
+nav .logo img {
+  height: 40px;
+}
+
 footer .footer-wrap {
   margin-top: 5rem;
   font-size: 0.9rem;
@@ -374,5 +378,22 @@ main {
 .cartTotal-wrap .delivery-fee span:first-child,
 .cartTotal-wrap .totalWrap span:first-child {
   color: #aaa;
+}
+
+.cart-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-footer .next {
+  background-color: #aec6a1;
+  padding: .5rem 1rem;
 }
 /*# sourceMappingURL=all.css.map */
