@@ -341,6 +341,20 @@ main {
 .cart-item .item-total .item-count .itemInput {
   width: 3rem;
   padding: 2px .25rem;
+  /* Firefox */
+}
+
+.cart-item .item-total .item-count .itemInput::-webkit-outer-spin-button, .cart-item .item-total .item-count .itemInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-item .item-total .item-count .itemInput[type=number] {
+  -moz-appearance: textfield;
+}
+
+.cart-item .hidden-price {
+  display: none;
 }
 
 .cartTotal-wrap {
@@ -390,6 +404,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cart-footer .back i {
+  margin-right: .25rem;
 }
 
 .cart-footer .next {

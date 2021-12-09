@@ -117,9 +117,23 @@ main{
             .itemInput {
                 width: 3rem;
                 padding: 2px .25rem;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Firefox */
+                &[type=number] {
+                    -moz-appearance: textfield;
+                }
             }
         }
 
+    }
+    .hidden-price{
+        display: none;
     }
 }
 .cartTotal-wrap{
@@ -142,12 +156,7 @@ main{
                 color: #aaa;
             }
         }
-       
-
     }
-
-
-   
 }
 
 .cart-footer{
@@ -155,7 +164,9 @@ main{
     justify-content: space-between;
     align-items: center;
     .back{
-
+        i{
+            margin-right: .25rem;
+        }
     }
     .next{
         background-color: $themeColor;
