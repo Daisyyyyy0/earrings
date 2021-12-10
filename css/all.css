@@ -404,6 +404,20 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 2rem;
+}
+
+.cart-footer a {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.cart-footer .back {
+  color: #aaa;
+}
+
+.cart-footer .back:hover {
+  color: #333;
 }
 
 .cart-footer .back i {
@@ -412,6 +426,10 @@ main {
 
 .cart-footer .next {
   background-color: #aec6a1;
-  padding: .5rem 1rem;
+  padding: .5rem 1.5rem;
+}
+
+.cart-footer .next:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=all.css.map */

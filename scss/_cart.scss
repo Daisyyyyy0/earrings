@@ -163,13 +163,24 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2rem;
+    a{
+        transition: .2s;
+    }
     .back{
+        color: #aaa;
+        &:hover{
+            color: #333;
+        }
         i{
             margin-right: .25rem;
         }
     }
     .next{
         background-color: $themeColor;
-        padding: .5rem 1rem;
+        padding: .5rem 1.5rem;
+        &:hover{
+            color: #fff;
+        }
     }
 }

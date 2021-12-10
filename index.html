@@ -12,6 +12,8 @@
     <!-- swipe CDN for css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         .swiper {
             width: 100%;
@@ -181,7 +183,7 @@
 
         </section>
 
-        <section class="pictureWall">
+        <section class="pictureWall" data-aos="fade-in">
             <div class="container">
                 <div class="title">
                     <div class="h1">Master Cleanse Reliac Heirloom</div>
@@ -422,6 +424,7 @@
         </script>
     <!-- swipe CDN for js -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             // Optional parameters
@@ -445,7 +448,8 @@
             // },
         });
     </script>
-    <script src="./main.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
