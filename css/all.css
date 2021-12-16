@@ -34,6 +34,10 @@ footer .footer-logo, .cart-head .step-wrap .w-25 .progress-step {
           box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 li {
   list-style: none;
 }
@@ -230,6 +234,11 @@ main #new-arrival .item p {
   color: #333;
 }
 
+#cart {
+  position: relative;
+  padding-top: 4rem;
+}
+
 main {
   background-color: #eef3eb;
   padding-bottom: 4rem;
@@ -264,10 +273,12 @@ main {
   width: 3rem;
   height: 3rem;
   margin-bottom: 0.5rem;
+  z-index: 2;
 }
 
 .cart-head .step-wrap .w-25 .progress {
   position: absolute;
+  z-index: 0;
   width: 70%;
   height: 0.625rem;
   right: 0;
@@ -295,12 +306,12 @@ main {
   letter-spacing: 1px;
 }
 
-.cart-body .cart-list {
-  padding: .5rem 1rem;
+.cart-body hr {
+  background-color: #93b381;
 }
 
-.cart-body .cart-list hr {
-  background-color: #93b381;
+.cart-body .cart-list {
+  padding: .5rem 1rem;
 }
 
 .cart-item {
@@ -415,6 +426,10 @@ main {
   color: #aaa;
 }
 
+.cartTotal-wrap::before {
+  content: '';
+}
+
 .cart-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,5 +467,24 @@ main {
 
 .cart-footer .next:hover {
   color: #fff;
+}
+
+.how-to-pay,
+.how-to-delivery {
+  margin: 1rem;
+}
+
+.how-to-pay .title,
+.how-to-delivery .title {
+  margin-bottom: 1rem;
+}
+
+.how-to-pay .form-check,
+.how-to-delivery .form-check {
+  margin-bottom: 0.5rem;
+}
+
+.how-to-delivery .title {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,3 +1,7 @@
+#cart{
+    position: relative;
+    padding-top: 4rem;
+}
 main{
     background-color: $secondBackground;
     padding-bottom: 4rem;
@@ -159,6 +163,10 @@ main{
                 color: #aaa;
             }
         }
+    }
+    &::before{
+        content: '';
+        
     }
 }
 
