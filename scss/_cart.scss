@@ -30,12 +30,14 @@ main{
                 height: 3rem;
                 @extend %beCenter;
                 margin-bottom: 0.5rem;
+                z-index: 2;
             }
             .progress-text{
                 
             }
             .progress{
                 position: absolute;
+                z-index: 0;
                 width: 70%;
                 height: 0.625rem;
                 right: 0;
@@ -62,11 +64,12 @@ main{
         font-size: 1.2rem;
         letter-spacing: 1px;
     }
+    hr {
+        background-color: $borderColor;
+    }
     .cart-list {
         padding: .5rem 1rem;
-        hr{
-            background-color: $borderColor;
-        }
+        
     }
 }
 .cart-item {
