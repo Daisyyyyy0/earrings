@@ -64,6 +64,7 @@ main{
 
     .pictureWall{
         margin-top: 4rem;
+        overflow: hidden;
         .wall{
             .row{
                 .row>* {

@@ -1,7 +1,23 @@
-nav{
+.navbar{
+    // position: relative;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    transition: .3s;
+
     .logo{
         img{
             height: 40px;
         }
     }
+    
+    .nav-link{
+        i{
+            font-size: 20px;
+        }
+    }
+}
+
+.navbar-bg-white{
+    background-color: rgba($color: #ffffff, $alpha: .95);
 }
