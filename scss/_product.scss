@@ -1,0 +1,183 @@
+main.product-page{
+    background-color: $background;
+    @extend %alignCenter;
+    & > section{
+        margin: 2rem 0;
+
+        &>.h4{
+            color: $textColor;
+        }
+    }
+}
+.product{
+    .gallery{
+        .zoomImage{
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            
+            img{
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .bigImage{
+            img{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:1200px) {
+            // .gallery{
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                .zoomImage{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    order: 2;
+                    img{
+                        width: 100%;
+                        margin-right: 1rem;
+                    }
+                }
+                .bigImage{
+                    order: 0;
+                    margin-bottom: 1rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            // }
+            
+                
+        }
+           
+            
+    }
+    .product-detail{
+        .type{
+            font-size: 0.8rem;
+            color: $borderColor;
+        }
+        .product-name{
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            span{
+                display: block;
+                color: $textColor;
+                letter-spacing: 1px;
+            }
+            .tw{
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+        }
+        .product-review{
+            color:$borderColor;
+            display: flex;
+            margin-left: -.5rem;
+            & > div{
+                margin: 0 .5rem;
+            }
+            .five-stars{
+                color: $textColor;
+            }
+            .share{
+                &>*{
+                    margin-right: .5rem;
+                }
+            }
+        }
+        .product-price{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+        .id{
+            font-size: 0.75rem;
+        }
+    }
+   
+    .intro{
+        .description{
+            margin-left: -1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            span{
+                display: inline-block;
+                margin: 0 1rem
+            }
+        }
+    }
+    .choice-wrap{
+        justify-content:flex-start;
+        margin: .25rem 0 1.25rem;
+
+        .choiceColor{
+            .text{
+                font-size: 0.9rem;;
+                .defult-color{
+                    font-weight: 600;
+                }
+            }
+            .color-menu{
+                & > input{
+                    margin-right: .5rem;
+                }
+            }
+        }
+        .chioceSize{
+            margin-left: 1rem;
+            padding-left: 1rem;
+            .col-md-12{
+                display: flex;
+                label{
+                    margin-right: 0.5rem;
+                }
+                select{
+                    align-content: center;
+                }
+            }
+        }
+    }
+
+
+    .product-action{
+        display: flex;
+        margin: 1rem 0;
+            & > a{
+                padding: .75rem 1.5rem;
+                border: 1px solid $themeColor;
+                transition: .15s;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    font-size: 1.25rem;
+                    margin-right: .5rem;
+                }
+            }
+        #addToCart{
+            background-color: $themeColor;
+            color: #fff;
+            &:hover{
+                background-color: $hoverColor;
+                border: 1px solid $themeColor;
+            }
+        }
+        #addToFavorite{
+            color: $borderColor;
+
+            &:hover{
+                background-color: #fff;
+                color: $themeColor;
+                border: 1px solid #fff;
+            }
+        }
+    }
+
+
+}

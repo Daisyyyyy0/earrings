@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     position: relative;
@@ -12,6 +13,14 @@ li{
 a{
     text-decoration: none;
     color: currentColor;
+}
+p{
+    color: #333;
+}
+main{
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .swiper-pagination-bullet{

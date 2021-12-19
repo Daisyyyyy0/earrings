@@ -1,11 +1,10 @@
 #cart{
-    position: relative;
-    padding-top: 4rem;
+    main{
+        background-color: $secondBackground;
+        padding-bottom: 4rem;
+    }
 }
-main{
-    background-color: $secondBackground;
-    padding-bottom: 4rem;
-}
+
 .cart-title{
         color: $textColor;
         letter-spacing: 2px;
@@ -166,7 +165,7 @@ main{
     }
     &::before{
         content: '';
-        
+
     }
 }
 
