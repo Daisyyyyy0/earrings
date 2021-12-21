@@ -19,6 +19,7 @@ main.product-page{
             img{
                 width: 100%;
                 margin-bottom: 1.5rem;
+                cursor: pointer;
             }
         }
         .bigImage{
@@ -125,6 +126,26 @@ main.product-page{
             .color-menu{
                 & > input{
                     margin-right: .5rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border: 1px solid #333;
+                    &:focus{
+                        border-color: $themeColor;
+                        box-shadow: 0 0 0 0.25rem $themeColor;
+                    }
+                }
+                .colorRed{
+                    background-color: red;
+                    &:checked{
+                        background-color: red;
+                    }
+                }
+                .colorGreen{
+                    background-color: rgb(21, 235, 188);
+                    
+                }
+                .colorWhite{
+                    background-color: #fff; 
                 }
             }
         }
@@ -138,6 +159,16 @@ main.product-page{
                 }
                 select{
                     align-content: center;
+                }
+                #inputSize{
+                    border-color: $themeColor;
+                    padding: .15rem 1.5rem .15rem .25rem;
+                    // width: 1.5rem;
+                    // height: 1rem;
+                    &:focus{
+                        box-shadow: 0 0 0 0.25rem $themeColor;
+                        opacity: .5;
+                    }
                 }
             }
         }

@@ -273,6 +273,7 @@ main.product-page > section > .h4 {
 .product .gallery .zoomImage img {
   width: 100%;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .product .gallery .bigImage img {
@@ -401,6 +402,31 @@ main.product-page > section > .h4 {
 
 .product .choice-wrap .choiceColor .color-menu > input {
   margin-right: .5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #333;
+}
+
+.product .choice-wrap .choiceColor .color-menu > input:focus {
+  border-color: #aec6a1;
+  -webkit-box-shadow: 0 0 0 0.25rem #aec6a1;
+          box-shadow: 0 0 0 0.25rem #aec6a1;
+}
+
+.product .choice-wrap .choiceColor .color-menu .colorRed {
+  background-color: red;
+}
+
+.product .choice-wrap .choiceColor .color-menu .colorRed:checked {
+  background-color: red;
+}
+
+.product .choice-wrap .choiceColor .color-menu .colorGreen {
+  background-color: #15ebbc;
+}
+
+.product .choice-wrap .choiceColor .color-menu .colorWhite {
+  background-color: #fff;
 }
 
 .product .choice-wrap .chioceSize {
@@ -421,6 +447,17 @@ main.product-page > section > .h4 {
 .product .choice-wrap .chioceSize .col-md-12 select {
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.product .choice-wrap .chioceSize .col-md-12 #inputSize {
+  border-color: #aec6a1;
+  padding: .15rem 1.5rem .15rem .25rem;
+}
+
+.product .choice-wrap .chioceSize .col-md-12 #inputSize:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #aec6a1;
+          box-shadow: 0 0 0 0.25rem #aec6a1;
+  opacity: .5;
 }
 
 .product .product-action {
