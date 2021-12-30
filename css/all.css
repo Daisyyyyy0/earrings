@@ -47,6 +47,11 @@ a {
   color: currentColor;
 }
 
+a:hover {
+  color: currentColor;
+  text-decoration: underline;
+}
+
 p {
   color: #333;
 }
@@ -510,7 +515,7 @@ main.product-page > section > .h4 {
   border: 1px solid #fff;
 }
 
-#cart main {
+#cart {
   background-color: #eef3eb;
   padding-bottom: 4rem;
 }
@@ -757,5 +762,168 @@ main.product-page > section > .h4 {
 
 .how-to-delivery .title {
   margin-bottom: 1rem;
+}
+
+main.login {
+  background-color: #eef3eb;
+  padding: 4rem 0;
+}
+
+main.login form {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 992px) {
+  main.login form {
+    margin-top: 2rem;
+  }
+}
+
+main.login form .row {
+  width: 100%;
+}
+
+main.login form .login {
+  max-width: 20rem;
+  margin: 0 auto;
+  margin-right: 3rem;
+  padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  main.login form .login {
+    margin-right: 0rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+}
+
+main.login form .login .form-floating input.form-control {
+  height: 50px;
+  padding: .5rem 1rem;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+main.login form .login .form-floating input.form-control:hover, main.login form .login .form-floating input.form-control:focus {
+  background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #aec6a1;
+}
+
+main.login form .login .form-floating label {
+  color: #aaa;
+  padding-bottom: .5rem;
+}
+
+main.login form .login .forgot {
+  margin-bottom: 1rem;
+}
+
+main.login form .login .or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.login form .login .or::before {
+  content: " ";
+  position: relative;
+  top: 2rem;
+  width: 8rem;
+  height: 4rem;
+  border-top: 1px solid #aaa;
+}
+
+main.login form .login .or::after {
+  content: " ";
+  position: relative;
+  top: 2rem;
+  width: 8rem;
+  height: 4rem;
+  border-top: 1px solid #aaa;
+}
+
+main.login form .login .or label {
+  position: relative;
+  top: 1.25rem;
+  color: #aaa;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+main.login form .login .fbBtn {
+  background-color: #5b83da;
+  margin-bottom: 1.5rem;
+}
+
+main.login form .login .fbBtn i {
+  font-size: 1.25rem;
+}
+
+main.login form .login .fbBtn:hover {
+  background-color: #4065B4;
+}
+
+main.login form .login .googleBtn {
+  background-color: #d66050;
+}
+
+main.login form .login .googleBtn i {
+  font-size: 1.25rem;
+}
+
+main.login form .login .googleBtn:hover {
+  background-color: #C23321;
+}
+
+main.login form .signup {
+  border: 0.5rem solid #c0945c;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-left: 3rem;
+  padding: 1rem 2rem;
+  display: block;
+  background-color: #F8F8F8;
+}
+
+main.login form .signup p {
+  text-align: center;
+}
+
+main.login form .signup img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  main.login form .signup {
+    margin-left: 0rem;
+    margin: 0 auto;
+  }
+}
+
+main.login form .h5 {
+  text-align: center;
+}
+
+main.login form .acc-btn {
+  background-color: #333;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  border: none;
+}
+
+main.login form .acc-btn:hover {
+  background-color: #444;
 }
 /*# sourceMappingURL=all.css.map */

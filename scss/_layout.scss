@@ -13,6 +13,10 @@ li{
 a{
     text-decoration: none;
     color: currentColor;
+    &:hover{
+        color: currentColor;
+        text-decoration: underline;
+    }
 }
 p{
     color: #333;

@@ -1,4 +1,4 @@
-'use strict'
+'use strict '
 
 // const gallery = document.querySelector('.gallery')
 const zoomImages = document.querySelectorAll('.zoomImage > img')
