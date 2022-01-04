@@ -1,0 +1,70 @@
+header{
+    position: relative;
+
+    .present-position{
+        position: fixed;
+        z-index: 100;
+        top: 62px;
+        width: 100%;
+        padding: .5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: $back_end_themeColor;
+    }
+}
+
+main.product-create{
+    // margin-top: 5rem;
+    position: relative;
+    top: 5rem;
+    background-color: $back_end_background;
+    // background-image: url(../img/texture.png);
+}
+
+
+.itemWrap{
+    margin-bottom: 1rem;
+    width: 42%;
+    justify-content: space-between;
+    label{
+        margin-right: 1rem;
+        width: 5rem;
+    }
+    input{
+        &:focus{
+            box-shadow: 0 0 0 0.15rem $back_end_themeColor;
+            opacity: .5;
+        }
+    }
+    
+    .col-auto:last-child{
+        flex-grow: 1;
+        // width: 100%;
+    }
+}
+
+#imgs{
+    margin-top: 2rem;
+}
+
+
+.btnWrap{
+    margin-top: 2rem;
+    a:first-of-type{
+        margin-right: 2rem;
+    }
+    .cancel{
+        background-color: $cancelColor;
+        padding: .5rem 1.5rem;
+        font-size: 1rem;
+    }
+    .submit{
+        background-color: $back_end_themeColor;
+        padding: .5rem 1.5rem;
+        transition: .1s;
+        &:hover{
+            color: white;
+        }
+    }
+}
