@@ -943,13 +943,13 @@ header .present-position {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
-  background-color: #8abcd1;
+  background-color: #9bcce0;
 }
 
 main.product-create {
   position: relative;
-  top: 5rem;
-  background-color: #d0dfe6;
+  padding-top: 8rem;
+  background-color: #d6e7ee;
 }
 
 .itemWrap {
@@ -966,8 +966,8 @@ main.product-create {
 }
 
 .itemWrap input:focus {
-  -webkit-box-shadow: 0 0 0 0.15rem #8abcd1;
-          box-shadow: 0 0 0 0.15rem #8abcd1;
+  -webkit-box-shadow: 0 0 0 0.15rem #9bcce0;
+          box-shadow: 0 0 0 0.15rem #9bcce0;
   opacity: .5;
 }
 
@@ -996,7 +996,7 @@ main.product-create {
 }
 
 .btnWrap .submit {
-  background-color: #8abcd1;
+  background-color: #9bcce0;
   padding: .5rem 1.5rem;
   -webkit-transition: .1s;
   transition: .1s;
